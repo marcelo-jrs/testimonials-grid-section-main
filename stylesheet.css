@@ -1,211 +1,357 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-html{
-    max-width: 1440px;
-    box-sizing: border-box;
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    font-size: 13px;
+html {
+  max-width: 1440px;
+  box-sizing: border-box;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 13px;
 }
 
-body{
-    height: 100vh;
-    width: 100%;
-    background-color: hsl(210, 46%, 95%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: hsl(210, 46%, 95%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 1180px;
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1180px;
 }
 
-article{
-    padding-top: 20px;
+article {
+  padding-top: 20px;
 }
 
-h3{
-    font-size: 12px;
+h3 {
+  font-size: 12px;
 }
 
-span{
-    font-size: 12px;
+span {
+  font-size: 12px;
 }
 
-section{
-    display: flex;
+section {
+  display: flex;
 }
 
-.bold{
-    font-size: 20px;
-    font-weight: 600; 
+.bold {
+  font-size: 20px;
+  font-weight: 600;
 }
 
-.dark-bold{
-    font-size: 20px;
-    font-weight: 600;
-    color: hsl(217, 19%, 35%);
+.dark-bold {
+  font-size: 20px;
+  font-weight: 600;
+  color: hsl(217, 19%, 35%);
 }
 
-.quote{
-    line-height: 1.5em;
-    font-size: 12px;
-    font-weight: 500;
-    opacity: 50%;
+.quote {
+  line-height: 1.5em;
+  font-size: 12px;
+  font-weight: 500;
+  opacity: 50%;
 }
 
-.div{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    max-width: 250px;
-    margin: 10px 10px;
-    border-radius: 10px;
-    padding-right: 30px;
-    padding-left: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    color: hsl(210, 46%, 95%);
-    box-shadow: 0 3px 5px 3px rgba(0, 0, 0, 0.2);
+.div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 250px;
+  margin: 10px 10px;
+  border-radius: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: hsl(210, 46%, 95%);
+  box-shadow: 0 3px 5px 3px rgba(0, 0, 0, 0.2);
 }
 
-.dark{
-    color: hsl(217, 19%, 35%);
+.dark {
+  color: hsl(217, 19%, 35%);
 }
 
-.name{
-    color: hsl(210, 46%, 95%);
+.name {
+  color: hsl(210, 46%, 95%);
 }
 
-.verified{
-    color: hsl(210, 46%, 95%);  
-    opacity: 50%;
+.verified {
+  color: hsl(210, 46%, 95%);
+  opacity: 50%;
 }
 
-.dark-verified{
-    opacity: 50%;
+.dark-verified {
+  opacity: 50%;
 }
 
-#first{
-    background-color: hsl(263, 55%, 52%);
+#first {
+  background-image: url(images/bg-pattern-quotation.svg);
+  background-color: hsl(263, 55%, 52%);
+  background-repeat: no-repeat;
+  background-position: 80% 0%;
 }
 
-#second{
-    background-color: hsl(217, 19%, 35%)
+#second {
+  background-color: hsl(217, 19%, 35%);
 }
 
-#third{
-    background-color: hsl(0, 0%, 100%);
-    color: hsl(217, 19%, 35%);
+#third {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(217, 19%, 35%);
 }
 
-#fourth{
-    background-color: hsl(219, 29%, 14%);
+#fourth {
+  background-color: hsl(219, 29%, 14%);
 }
 
-#fifth{
-    background-color: hsl(0, 0%, 100%);
-    color: hsl(217, 19%, 35%);
+#fifth {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(217, 19%, 35%);
 }
 
-#image1{
-    width: 25px;
-    height: 25px;
-    background-image: url(images/image-daniel.jpg);
-    background-size: contain;
-    border-radius: 50%;
-    border: 2px solid hsl(0, 0%, 81%);
-    margin-right: 10px;
+#image1 {
+  margin-top: 25px;
+  width: 25px;
+  height: 25px;
+  background-image: url(images/image-daniel.jpg);
+  background-size: contain;
+  border-radius: 50%;
+  border: 2px solid hsl(0, 0%, 81%);
+  margin-right: 10px;
 }
 
-#image2{
-    width: 25px;
-    height: 25px;
-    background-image: url(images/image-jonathan.jpg);
-    background-size: contain;
-    border-radius: 50%;
-    border: 2px solid hsl(0, 0%, 81%);
-    margin-right: 10px;
+#image2 {
+  width: 25px;
+  height: 25px;
+  background-image: url(images/image-jonathan.jpg);
+  background-size: contain;
+  border-radius: 50%;
+  border: 2px solid hsl(0, 0%, 81%);
+  margin-right: 10px;
 }
 
-#image3{
-    width: 25px;
-    height: 25px;
-    background-image: url(images/image-jeanette.jpg);
-    background-size: contain;
-    border-radius: 50%;
-    border: 2px solid hsl(0, 0%, 81%);
-    margin-right: 10px;
+#image3 {
+  width: 25px;
+  height: 25px;
+  background-image: url(images/image-jeanette.jpg);
+  background-size: contain;
+  border-radius: 50%;
+  border: 2px solid hsl(0, 0%, 81%);
+  margin-right: 10px;
 }
 
-#image4{
-    width: 25px;
-    height: 25px;
-    background-image: url(images/image-patrick.jpg);
-    background-size: contain;
-    border-radius: 50%;
-    border: 2px solid hsl(0, 0%, 81%);
-    margin-right: 10px;
+#image4 {
+  width: 25px;
+  height: 25px;
+  background-image: url(images/image-patrick.jpg);
+  background-size: contain;
+  border-radius: 50%;
+  border: 2px solid hsl(0, 0%, 81%);
+  margin-right: 10px;
 }
 
-#image5{
-    width: 25px;
-    height: 25px;
-    background-image: url(images/image-kira.jpg);
-    background-size: contain;
-    border-radius: 50%;
-    border: 2px solid hsl(0, 0%, 81%);
-    margin-right: 10px;
+#image5 {
+  width: 25px;
+  height: 25px;
+  background-image: url(images/image-kira.jpg);
+  background-size: contain;
+  border-radius: 50%;
+  border: 2px solid hsl(0, 0%, 81%);
+  margin-right: 10px;
 }
 
-@media (max-width: 900px){
-    
+#margin{
+    margin-top: 25px;
+}
+
+@media (min-width: 1000px) {
+    body {
+        height: 100vh;
+        width: 100%;
+        background-color: hsl(210, 46%, 95%);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0;
+    }
+
+    .big-div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .small-div {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    #first{
+        max-width: 500px;
+        height: 200px;
+    }
+
+    #second{
+        height: 200px;
+    }
+
+    #third{
+        height: 200px;
+    }
+
+    #fourth{
+        max-width: 500px;
+        height: 200px;
+    }
+
+    #fifth{
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        max-width: 200px;
+        min-height: 540px;
+    }
 }
